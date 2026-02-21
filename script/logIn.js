@@ -13,10 +13,16 @@ document.getElementById("login-btn").addEventListener("click", function () {
     // step -3 match phn no & pin 
 
     if (contactNumber == "01830532640" && pinNumber == "1234") {
+        // step -3.1 if match log in
         alert("log In successfully");
+        window.location.assign("./home.html");
     }
+    // step-3.2 if don't match 
     else {
         alert("Log in failed");
+        // document.getElementById("login-form").reset();
+        // numberInput.value = "";
+        // pinInput.value = "";
         return;
     }
 })
